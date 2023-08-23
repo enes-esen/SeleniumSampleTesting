@@ -1,0 +1,20 @@
+
+SELENIUM NOT
+
+Selenium install
+	python -m pip install selenium
+    
+
+Selenium Web Driver için kullanılacak tarayıcıya uygun selenium driver indirilir.
+    Chrom Driver: https://chromedriver.storage.googleapis.com/index.html?path=114.0.5735.90/
+
+
+
+
+
+
+
+
+
+
+
