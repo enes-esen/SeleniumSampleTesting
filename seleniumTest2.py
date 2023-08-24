@@ -1,23 +1,27 @@
 from selenium import webdriver
 import time
+from PIL import Image
+from Screenshot import Screenshot
+from datetime import datetime
 
-driver = webdriver.Chrome(executable_path = 'C:/Users/EraDev/Downloads/chromedriver_win32/chromedriver.exe')
+driver = webdriver.Chrome()
 url = "https://www.google.com/"
 driver.get(url)
-driver.save_screenshot()
+
+
+now = datetime.now()
+today = now.strftime("%y%m%d")
+times = now.strftime("%H%M%S")
+
+print("Gün: ", today) 
+print("Zaman: ", times)
+
+path1 = "C:/Users/EraDev/Desktop/SELENIUM/Screenshot/"
+path2 = today +"_" + times + ".png"
+path = path1 + path2
+
+driver.save_screenshot(path)
 time.sleep(5)
 
-from datetime import date
-today = date.today()
-today = today.strftime("%m/%d/%y")
-print("Tarih: ", today)
-
-
-
-
-
-#path = *"C:/Users/EraDev/Desktop/SELENIUM/Screenshot/",today,".png"
-path = *today,".png"
-
-browser.save_screenshot(path)
-print(path)
+screenshot = Image.open(path)
+screenshot.show()
