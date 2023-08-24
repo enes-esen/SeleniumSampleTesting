@@ -7,13 +7,35 @@ Selenium install
 
 Selenium Web Driver için kullanılacak tarayıcıya uygun selenium driver indirilir.
     Chrom Driver: https://chromedriver.storage.googleapis.com/index.html?path=114.0.5735.90/
+                    https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_win32.zip
+    
+Selenium Öğe Bulma
+
+    <input size="20" class="textfield margin-top5" type="text" name="User" id="User" value="">
+    Bu satırı yakalamak için id'yi kullanabiliriz.
+
+    Önce elemanları bulmamızı sağlayan "By" fonksiyonunu import etmeliyiz.
+        from selenium.webdriver.common.by import By
+        
+    Users'ı kullanmak için "User" isminde bir değişken 
+    
 
 
+<div id="drop_mainmenu" class="e1MenuBarItemChild MenuBarFocusableDiv" tabindex="1"></div>
 
+<span id="fldnode10038088" title="Task Type:Task View, Fastpath Code: TV:100">ERA</span>
 
+<span id="fldnode10038091" title="Task Type: Folder, Fastpath Code: JDE030506">Aktivite İşlemleri</span>
 
-
-
+<a 
+	id="fldnode10038093" 
+	"arrownav="yes" 
+	onkeydown="return doMenuKeyDown(this,event)" 
+	href="javascript:RunNewApp(&quot;launchForm&quot;,&quot;0&quot;,&quot;P58AF002&quot;,&quot;APP&quot;,&quot;W58AF002C&quot;,&quot;&quot;,&quot;1&quot;,&quot;&quot;,&quot;Aktivite%20Giri%C5%9Fi&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;node10038093&quot;,&quot;&quot;,&quot;ec061823150d9c17&quot;,&quot;6380A95C009502-002941F7E9FFFB40-OIJY_6380A92C028800-002941F7E9FFFB40-OIJY_10038093&quot;)" 
+	onclick="checkHrefKeyPress(this, event, null)" 
+	title="Application: P58AF002, Form: W58AF002C">
+	Aktivite Girişi
+</a>
 
 
 
